@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InputTypeattribute values</title>
+</head>
+<body>
+    <!--type of information : text,emial,password,Date-time date, file like resume,color ,range,radio buttons,checkbox ,submit,reset etc-->
+    <!--for example you can take myntra or e commerce sites-->
+    <form>
+        Name: <input type="text" placeholder="Enter your full name" required><br>
+        Email: <input type="email" placeholder="Enter you Email" ><br>
+        Mobile: <input type="tel" maxlength="10"><br>
+        Age: <input type="number" maxlength="55"><br>
+        Password: <input type="password" placeholder="Enter your password" ><br>
+        <!--data type-->
+        date: <input type="date" placeholder="date"><br><!--astrology sites lo chudandi particular time and present time untundi-->
+        datetime-local : <input type="datetime-local" placeholder="date"><br>
+        datetime: <input type="datetime" placeholder="date"><br>
+        month : <input type="month" placeholder="month"><br>
+        <!--file : uploading document-->
+        File: <input type="file" placeholder="Upload your documents"><br><!--applications lo resume or photos upload cheyadaniki -->
+        <!--url : for submitting your social media url-->
+        Url: <input type="url" placeholder="enter your social url"><br>
+        <!--range : for section of price range..etc-->
+        Range: <input type="range"><br><!--e commerce sites lo price range set cheyadaniki-->
+        <!--color : for colour selection like in games there will be skin color selection or hair color etc-->
+        Color: <input type="color" ><br><!--shopping sites lo specific color kosam-->
+        <!--search-->
+        🔎: <input type="search"><br><!--specifi type of brand or cloth type kosam-->
+
+        <!--gender-->
+        Male: <input type="radio" name="gender"><br><!--shopping site lo radio button use chestaru only one option can select-->
+        Female: <input type="radio" name="gender"><br>
+
+        <!--checklist-->
+        Samsung: <input type="checkbox"><br> <!--shopping sites lo brand selection or cloth type or etc kosam-->
+        Apple: <input type="checkbox"><br>
+        Xioami : <input type="checkbox"><br>
+
+        <!--types of buttons-->
+        Submit: <input type="submit"><br>
+        Reset: <input type="reset"><br>
+        Button: <input type="button" value="button"><br>
+
+        <!--required and read only : for agreement and terms and conditions-->
+        Terms and Conditions : <input type="checkbox" required readonly>
+    </form>
+</body>
+</html>
