@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormElements</title>
+</head>
+<body><!--css lekunda colour cheyalantey body lo "bg color"vadochu and for styling "style=color:;" vadochu -->
+    <!--form elements : label,inout,button,textarea,select,option,optgroup,fieldset,legend,datalist,etc..-->
+    <!--dropdown : select-->
+    <form>
+        <select name="" id="">
+            <option value="" selected>Samsung</option><!--edi selected pedthey adi default ga ostundi-->
+            <option value="">Apple</option>
+            <option value="">Xioami</option>
+            <option value="">OnePlus</option>
+            <option value="">Motorola</option>
+        </select>
+        <select name="" id="">
+            <optgroup label="Mobiles"><!--opt group manam grouping ki use chestam-->
+            <option value="" >Samsung</option><!--ikada optgroup vadi manam mobile section dropdown lo create chesam-->
+            <option value="">Apple</option>
+            <option value="">Xioami</option>
+            <option value="">OnePlus</option>
+            <option value="">Motorola</option>
+        </optgroup>
+        <optgroup label="Laptops"><!--ikada optgroup vadi same dropdown lo manam laptop sections create chesam-->
+            <option value="" selected>Dell</option><!--default ga dell pettanu -->
+            <option value="">Mac</option>
+            <option value="">Hp</option>
+            <option value="">Vivo</option>
+            <option value="">Asus</option>
+        </optgroup>
+        </select>
+    </form>
+    <!--fieldset-->
+    <!--personal section-->
+    <form>
+        <fieldset><legend>Personal information</legend><!--fieldset use chestey manaki seperate box ostundi fieldset lo rasey data seperate box ostundi-->
+            <!--legend gives the title for the fieldset-->
+        <label for="">fullname</label><br>
+        <input type="text"><br>
+        <label for="">email</label><br>
+        <input type="email"><br>
+        <label for="">Mobile</label><br>
+        <input type="tel"><br>
+        <label for="">password</label><br>
+        <input type="password"><br>
+        <input type="submit"><br>
+        </fieldset>
+
+        <fieldset><legend>Education details</legend>
+            <label for="">College Name</label><br>
+            <input type="text"><br>
+            <label for="">College email</label><br>
+            <input type="email"><br>
+            <label for="">Branch</label><br>
+            <input type="text"><br>
+            <label for="">CGPA</label><br>
+            <input type="number" maxlength="10"><br>
+            <input type="submit"><br>
+            </fieldset>
+    </form>
+    <!--datalist : which has some predefined options for an input field-->
+    <!--similar to drop down but value predefined ga ivakunda options lo nunchi select cheyali-->
+    <form>
+        <input list="Countries" name="">
+        <datalist id="Countries">
+            <option value="India"></option>
+            <option value="USA"></option>
+            <option value="Germany"></option>
+            <option value="London"></option>
+            <option value="Australia"></option>
+        </datalist>
+    </form>
+    <form>
+        <textarea name="" id="" cols="100" rows="" maxlength="10"></textarea>
+    </form>
+</body>
+</html>
